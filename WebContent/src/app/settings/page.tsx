@@ -17,7 +17,6 @@ import { DataTable } from "@/components/DataTable";
 import { ColumnDef } from "@tanstack/react-table";
 import React from "react";
 import PageTitle from "@/components/PageTitle";
-import { cn } from "@/lib/utils";
 import FileUploader from "@/components/FileUploader";
 
 type Props = {};

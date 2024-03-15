@@ -1,10 +1,10 @@
 import React, { ChangeEvent, DragEvent, useState } from 'react';
 
 const FileUploader = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleFileChange = (e:  ChangeEvent<HTMLInputElement>) => {
-    setSelectedFile(e.target.files[0]);
+    setSelectedFile(e.target.files![0]);
   };
 
   const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
